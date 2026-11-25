@@ -51,9 +51,9 @@ Dashboard calculations and written takeaways are linked to the Clean Data and Ca
 - Land listing supply is deepest in GRA (548 listings) and lowest in Omole (15).
 - Land median asking price per sqm is approximately ₦190k; the middle 50% is roughly ₦147k–₦265k. A 600 sqm budget scenario at the median is about ₦114m (range about ₦88m–₦159m).
 
-## Business interpretation
+## Business interpretation and portfolio case study
 
-See [business insights](documentation/business-insights.md), [methodology](documentation/project-methodology.md), and [recommendations](documentation/recommendations.md).
+See the [portfolio case study](documentation/portfolio-case-study.md), [business insights](documentation/business-insights.md), [methodology](documentation/project-methodology.md), and [recommendations](documentation/recommendations.md).
 
 ## Limitations
 
