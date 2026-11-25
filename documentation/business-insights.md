@@ -1,47 +1,55 @@
 # Business Insights
 
-The following findings are based on the cleaned 6,186-record dataset and should be interpreted in the context of 2022 online asking listings.
+Findings are based on the workbook's Notes sheet and the cleaned dataset of 6,186 listings. Data represents 2022 online asking listings, not confirmed transactions.
 
-## 1. Listing supply is concentrated in a few areas
+## 1. Listing concentration
 
-GRA recorded the highest listing volume with 1,716 listings. Other Ikeja followed with 1,158, while Adeniyi Jones recorded 820. Together, these three categories accounted for approximately 60% of the cleaned dataset.
+GRA holds approximately 28% of all listings. GRA, Other Ikeja and Adeniyi Jones together account for about 60% of listing volume.
 
-**Interpretation:** Online listing activity was concentrated in a relatively small number of area categories. This may reflect stronger advertised supply, greater market visibility or differences in platform coverage. It does not, by itself, prove that these areas had the highest transaction activity.
+**Interpretation:** Online listing supply/visibility is concentrated in a few area categories. Listing counts are not equivalent to completed sales or market liquidity.
 
-## 2. Asking prices are strongly skewed
+## 2. Newly built properties: count versus share
 
-The overall median asking price was approximately ₦150 million, while the mean was approximately ₦526 million.
+GRA has the highest absolute newly built listing count (352), but Adeniyi Jones has the highest newly built share at about 29%, compared with approximately 21% in GRA.
 
-**Interpretation:** The large gap suggests that a relatively small number of high-priced listings pull the average upward. The median is therefore a more useful measure of a typical listing in this dataset.
+**Interpretation:** GRA has the larger count due to its larger listing base; Adeniyi Jones has the higher proportion of new-build listings.
 
-## 3. Land listings had a higher median asking price
+## 3. GRA property mix
 
-The median asking price for land listings was approximately ₦300 million, compared with approximately ₦130 million for non-land listings.
+GRA is approximately 66% residential/Other, 32% land and 2% commercial.
 
-**Interpretation:** The land category had a median asking price roughly 2.3 times that of non-land listings. This comparison is descriptive and does not adjust for plot size, location quality, title, zoning or development potential.
+**Interpretation:** GRA's listings are predominantly residential, with land also representing a meaningful portion of advertised supply.
 
-## 4. GRA led in newly built listing count, while Adeniyi Jones led by share
+## 4. Asking prices are highly skewed
 
-GRA had the highest absolute count of newly built listings at 352. Adeniyi Jones had an estimated newly built share of 28.8% (approximately 29%), compared with approximately 20.5% (approximately 21%) in GRA.
+Median asking price is approximately ₦150 million, while the mean is approximately ₦526 million. Awolowo Way has the highest area median in the workbook notes at ₦220 million versus GRA at ₦200 million; the intervals overlap.
 
-**Interpretation:** GRA had more newly built listings in total because it had a larger listing base. Adeniyi Jones had a higher proportion of newly built listings within its own category. Counts and percentages answer different questions and should not be confused.
+**Interpretation:** High-value outliers lift the mean. Median is more useful for describing a typical listing. The overlapping intervals mean the area median difference should not be treated as conclusive.
 
-## 5. Land listing volume varied considerably by area
+## 5. Land versus non-land pricing
 
-GRA recorded 548 land listings, followed by Other Ikeja (394) and Adeniyi Jones (169). Awolowo Way and Opebi recorded 155 and 146 respectively.
+Land median asking price is approximately ₦300 million compared with ₦130 million for non-land, a ratio of roughly 2.3×. Land prices are also more widely spread.
 
-**Interpretation:** These areas had the largest visible land-listing supply in the dataset. Listing volume should not be interpreted as available developable land or completed transactions.
+**Interpretation:** Land listings tend to carry higher asking prices in this dataset, but the comparison does not adjust for plot size or location quality.
 
-## 6. Land price per square metre provides a more comparable lens
+## 6. Land listing supply
 
-The overall median land asking price per square metre was approximately ₦190,476. The middle 50% of observations fell roughly between ₦147,000 and ₦265,000 per square metre.
+GRA has 548 land listings, the highest count. Omole has the lowest at 15.
 
-**Interpretation:** Price per square metre helps compare plots of different sizes, but it still does not account for title quality, road access, zoning, plot shape, infrastructure or exact micro-location.
+**Interpretation:** GRA offers the largest visible listing sample for land in this dataset, while Omole's small sample makes comparisons less stable.
 
-## Analytical cautions
+## 7. Price per square metre and budget illustration
 
-- These are asking-price observations, not verified sale prices.
-- The data is from 2022 and is not a current market benchmark.
-- Other Ikeja is an aggregated category, not a specific neighbourhood.
-- Differences may reflect the mix and quality of listings as much as location.
-- Small samples can make neighbourhood-level medians unstable.
+Land median asking price per sqm is about ₦190,000, with the middle 50% approximately ₦147,000–₦265,000. GRA's median is around ₦233,000 per sqm, while Oregun and Airport Road are around ₦117,000–₦136,000.
+
+A 600 sqm illustrative budget using the overall median is about ₦114 million, with an approximate range of ₦88 million–₦159 million based on the middle 50% of rates.
+
+**Interpretation:** Price per square metre can make comparisons across plot sizes more meaningful. The budget illustration is not a valuation and should be supplemented with title, access, zoning, infrastructure and exact-location checks.
+
+## Data caveats
+
+- 2022 asking prices, not sale prices.
+- “Other Ikeja” is an aggregated category (around 19% of listings), not a single neighbourhood. It includes smaller areas such as Toyin Street (82), Oba Akran (81), Mangoro (23), Ladoke Akintola Street (20), Ladipo Bateye Street (19) and Remi Fani Kayode Street (18).
+- Listings are not independently verified.
+- Neighbourhood coverage and sample sizes vary.
+- Currency normalization uses the project's assumed exchange rate.
