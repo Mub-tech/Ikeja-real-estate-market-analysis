@@ -31,6 +31,21 @@ Property categories were defined as:
 - **Others:** residential and unclassified listings
 
 ## Dashboards
+## Dashboard Preview
+
+### Dashboard 1: Market Overview
+
+![Ikeja Real Estate Market Overview](assets/dashboard-1.png)
+
+### Dashboard 2: Pricing and Land Analysis
+
+![Ikeja Real Estate Pricing and Land Analysis](assets/dashboard-2.png)
+
+## Download the Excel Project
+
+[Download the interactive Excel workbook](project-files/Ikeja_Dashboard_Updated_Teal.xlsx)
+
+[View the dashboard PDF](project-files/Ikeja_Dashboards_2_Page.pdf)
 
 ### Dashboard 1: Market Overview
 Answers Q1–Q4 and focuses on listing concentration, property mix, newly built stock and neighbourhood-level overview. Filters include property type, newly built status, minimum/maximum price and neighbourhood.
