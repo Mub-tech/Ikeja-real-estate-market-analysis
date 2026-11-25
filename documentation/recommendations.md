@@ -1,33 +1,29 @@
 # Recommendations
 
-These recommendations translate the descriptive findings into practical next steps. They are intended as decision-support ideas, not investment or valuation advice.
+Recommendations are derived from the descriptive 2022 asking-listing analysis and are not investment or valuation advice.
 
-## For property seekers and buyers
+## For buyers and property seekers
 
-1. **Compare like with like.** Evaluate properties within the same category and similar neighbourhoods rather than relying on Ikeja-wide averages.
-2. **Use median prices as an initial reference.** The dataset's mean is heavily influenced by high-priced listings, so the median is a more representative starting point.
-3. **Assess land by price per square metre.** Compare plot sizes and asking prices together, then investigate title, zoning, access, infrastructure and development restrictions.
-4. **Verify every listing independently.** Confirm availability, ownership documents, title status, physical condition and asking price before making a decision.
+1. **Start with areas offering listing choice, but verify the meaning of “liquidity.”** GRA has the highest listing count and may offer a wider set of options to compare. Listing volume alone does not establish transaction liquidity.
+2. **Use median asking prices rather than means** as a typical-price starting point because the dataset is strongly right-skewed.
+3. **Compare land on a price-per-square-metre basis**, then independently investigate title, zoning, access, infrastructure, plot shape and micro-location.
+4. **Treat the 600 sqm budget estimate as an initial planning scenario only.** The workbook estimates about ₦114m at the overall median rate, with a middle-50% scenario range around ₦88m–₦159m.
+5. **Verify each listing**: availability, ownership documents, title, condition, price and physical location.
 
 ## For agents and property marketers
 
-1. **Prioritize evidence-led market monitoring.** Track listing volume and price movements by neighbourhood and property category.
-2. **Segment marketing by buyer intent.** Land, commercial property and other property listings have different comparison criteria and should not be marketed as one undifferentiated segment.
-3. **Measure listing quality, not just volume.** Track verified availability, complete property details, image quality and enquiry-to-viewing conversion.
-4. **Use neighbourhood-specific positioning.** The data shows different listing concentrations and newly built proportions across area categories.
+1. **Monitor neighbourhood-level listing activity** and refresh the analysis with new listing snapshots.
+2. **Separate new-build count from new-build share.** GRA has the largest count (352), while Adeniyi Jones has the higher share (29% vs 21%).
+3. **Use category-specific messaging.** Residential, commercial and land listings have different buyer needs and comparison factors.
+4. **Break “Other Ikeja” into its component locations** before making precise neighbourhood marketing or pricing decisions.
+5. **Track listing quality and outcomes**, such as verified availability, completeness of listing details and enquiry-to-viewing conversion, if those data become available.
 
-## For analysts and future project development
+## For future analysis
 
-1. **Refresh the dataset with newer observations** and compare periods to identify changes in listing supply and asking prices.
-2. **Add verified transaction data** where available to distinguish advertised prices from achieved sale prices.
-3. **Capture more property attributes**, including land size, bedrooms, bathrooms, building condition, title type, road access and exact location.
-4. **Document exchange-rate assumptions** and test how currency conversion affects price comparisons.
-5. **Show sample sizes alongside neighbourhood medians** so users can judge how much confidence to place in each comparison.
-6. **Automate repeatable cleaning steps** and maintain a data dictionary to improve consistency when the analysis is updated.
-
-## Suggested next analytical steps
-
-- Build a time-series view if listing dates are available.
-- Compare asking price per square metre across more consistently defined neighbourhoods.
-- Investigate outliers rather than automatically treating every extreme value as an error.
-- Add a data-quality log that records each exclusion rule and the number of affected records.
+- Refresh the dataset beyond 2022 and compare changes over time.
+- Add verified transaction data to distinguish asking prices from achieved prices.
+- Capture attributes such as land size, title type, condition, road access, exact location and development constraints.
+- Add sample-size labels to neighbourhood median comparisons.
+- Maintain a data-quality log with record counts for each exclusion rule.
+- Investigate outliers individually rather than treating all extreme values as errors.
+- Reconcile and split the aggregated “Other Ikeja” group into actual locations where possible.
