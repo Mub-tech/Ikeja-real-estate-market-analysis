@@ -1,57 +1,68 @@
 # Ikeja Real Estate Market Analysis
 
-An Excel-based analysis of residential, commercial and land property listings in Ikeja, Lagos, Nigeria, using listings collected from PropertyPro NG for 2022.
+An Excel-based analysis of 2022 PropertyPro NG property listings across Ikeja, Lagos, Nigeria. This project explores listing concentration, property mix, asking prices, newly built properties and land-market patterns.
 
 ## Project overview
 
-The project examines listing distribution, asking-price patterns, property categories, newly built properties and land pricing across Ikeja neighbourhoods. It follows an end-to-end spreadsheet workflow: data cleaning, preparation, exploratory analysis, KPI development and interactive dashboard reporting.
+The project uses an end-to-end Microsoft Excel workflow: data cleaning, preparation, analysis, KPI calculations and interactive dashboard reporting.
 
-**Tools:** Microsoft Excel
+**Tool:** Microsoft Excel
 
 ## Business questions
 
-- Which Ikeja neighbourhoods account for the largest share of property listings?
-- How do asking prices vary across property categories?
-- Where are land listings concentrated, and how do land prices per square metre differ?
-- What share of listings are classified as newly built?
-- What useful market signals can be drawn from the listing data?
+- Which area categories account for the highest share of listings?
+- How does property type and newly-built status vary by area?
+- How do asking prices differ by category and neighbourhood?
+- Where is land listing supply concentrated?
+- How can land asking prices be compared using price per square metre?
 
-## Dataset and preparation
+## Dataset and cleaning
 
-The working dataset contained 6,653 raw records and 12 original columns. After cleaning, 6,186 records were retained for analysis, representing approximately 93% of the original records.
+- Raw records: 6,653
+- Cleaned records: 6,186
+- Retention: approximately 93%
+- 12 neighbourhood categories
 
-Preparation included duplicate checks, removal of unsuitable rental-rate records and non-property entries, currency normalization for USD-denominated listings using an assumed exchange rate of ₦950 per USD, screening of implausible asking prices, and creation of analysis fields for property category and newly built status.
+Cleaning included duplicate removal, dropping per-square-metre/year/day/month rental-rate records, converting USD listings using an assumed ₦950/USD, removing non-property items, screening prices outside ₦5m–₦50bn, splitting Title and Description, and removing Currency and serial columns.
 
-The price screening thresholds were below ₦5 million and above ₦50 billion. These are project-specific data-quality rules, not universal definitions of valid property prices.
+Property categories were defined as:
+- **Land:** listings classified as land
+- **Commercial:** hotel, warehouse, office, shops, factory, filling station, school/hospital and commercial buildings
+- **Others:** residential and unclassified listings
 
-## Dashboard
+## Dashboards
 
-The workbook was designed around two views:
+### Dashboard 1: Market Overview
+Answers Q1–Q4 and focuses on listing concentration, property mix, newly built stock and neighbourhood-level overview. Filters include property type, newly built status, minimum/maximum price and neighbourhood.
 
-1. **Market Overview:** listing distribution, neighbourhood comparisons, property mix and newly built listings.
-2. **Pricing & Land Analysis:** asking-price comparisons, land listing distribution and land price-per-square-metre analysis.
+### Dashboard 2: Pricing & Land
+Answers Q5–Q8, emphasizing asking-price comparisons, land supply and price-per-square-metre insights. Includes a neighbourhood filter and plot-size input for an estimated land-budget scenario.
+
+Dashboard calculations and written takeaways are linked to the Clean Data and Calc sheets. The dashboard's amber input cells are intended to be changed by the viewer; related tiles, charts and insights recalculate.
 
 ## Selected findings
 
-- GRA had the largest listing count, with 1,716 records.
-- Other Ikeja accounted for 1,158 records, followed by Adeniyi Jones with 820.
-- The three largest categories represented about 60% of the cleaned dataset.
-- The overall median asking price was approximately ₦150 million, compared with a mean of approximately ₦526 million, indicating a strongly right-skewed price distribution.
-- The median asking price for land listings was approximately ₦300 million, compared with approximately ₦130 million for non-land listings.
-- GRA had the highest absolute count of newly built listings (352), while Adeniyi Jones had a higher newly built share, approximately 29%.
+- GRA holds 28% of the 6,186 listings. GRA, Other Ikeja and Adeniyi Jones together account for about 60%.
+- GRA leads in newly built listing count (352), while Adeniyi Jones has the highest newly built share (29% versus 21% in GRA).
+- GRA's listing mix is approximately 66% residential/Other, 32% land and 2% commercial.
+- Median asking price is about ₦150m versus a mean of ₦526m, reflecting skew from high-value listings.
+- Awolowo Way has the highest area median asking price in the notes (₦220m), compared with GRA at ₦200m; their intervals overlap.
+- Land median asking price is ₦300m versus ₦130m for non-land, around 2.3 times higher.
+- Land listing supply is deepest in GRA (548 listings) and lowest in Omole (15).
+- Land median asking price per sqm is approximately ₦190k; the middle 50% is roughly ₦147k–₦265k. A 600 sqm budget scenario at the median is about ₦114m (range about ₦88m–₦159m).
 
-See [business insights](documentation/business-insights.md), [methodology](documentation/project-methodology.md) and [recommendations](documentation/recommendations.md) for details.
+## Business interpretation
 
-## Important limitations
+See [business insights](documentation/business-insights.md), [methodology](documentation/project-methodology.md), and [recommendations](documentation/recommendations.md).
 
-This analysis describes online asking listings, not verified sale transactions or formal property valuations. The dataset represents 2022 listings and should not be interpreted as a current 2026 market valuation. Listing coverage may be uneven across neighbourhoods, property descriptions can be inconsistent, and the USD conversion uses an assumed rate of ₦950 per USD.
+## Limitations
 
-The aggregated **Other Ikeja** category is not a single neighbourhood. Results should be used as directional market signals rather than investment or valuation advice.
+These are 2022 asking prices, not confirmed sale prices or current market values. Online listing coverage may be uneven. “Other Ikeja” is an aggregated group (about 19% of listings), containing smaller areas such as Toyin Street, Oba Akran, Mangoro and others. Median and price-per-square-metre comparisons remain descriptive and do not control for title, condition, access, zoning or other property attributes.
 
 ## Repository contents
 
-- `documentation/project-methodology.md`: data preparation and analytical approach
-- `documentation/business-insights.md`: key findings and interpretation
-- `documentation/recommendations.md`: practical recommendations and next steps
+- `documentation/project-methodology.md`
+- `documentation/business-insights.md`
+- `documentation/recommendations.md`
 
-The Excel workbook, dashboard PDF and dashboard screenshots are not included in this initial documentation upload. They can be added when the source files are available.
+**Dashboard workbook and screenshots:** These binary project assets still need to be added to the repository. The dashboard workbook is the source of the charts and interactive inputs described above.
